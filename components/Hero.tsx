@@ -1,16 +1,21 @@
 import Image from 'next/image'
 export default function Hero(){
     return(
-        <div className="h-screen w-full flex justify-around mt-5 items-center">
-            <div className="text-6xl text-purple-500 flex flex-col justify-around">
-                <h1 className="text-purple-500 bg-black">Product Manager</h1>
-                <h1 className="text-red-500 bg-green-500">Tech Leader</h1>
-                <h1 className="text-green-500 bg-yellow-500">Team Leader</h1>
+        <div className="h-screen w-screen flex  flex-col justify-between   mt-5 items-center bg-indigo-900">
+            <div className="text-1xl flex flex-col items-center justify-around">
+                <h1 className="text-4xl text-white">Wilton Ribeiro Silva</h1>
+                <h2 className="text-xl text-gray-300">Tech Lead</h2>
+            
             </div>
-            <div className=" flex">
-                <div className="bg-purple-500 border border-indigo-600  ">
-                    <Image src="/imagens/1540205643949.jpg" width={200} height={200} />
+            <div className="w-80 h-80 bg-indigo-600 shadow-xl  rounded-full flex items-center justify-center ">
+                <div className="w-72 h-72 bg-indigo-700  rounded-full flex items-center justify-center animate-wiggle_rightleft ">
+                    <div className="w-60 h-60 flex items-center justify-center  rounded-full bg-indigo-800 animate-wiggle_left ">
+                        <Image className=" w-56 h-56 rounded-full " src="/imagens/1540205643949.jpg" width={200} height={200} />
+                    </div>
                 </div>
+            </div>
+            <div>
+                asd
             </div>
         </div>
     )
